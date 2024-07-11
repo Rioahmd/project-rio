@@ -13,7 +13,10 @@
     </li>
     <?php endforeach;?>
     </ul>
+    <?php echo $this->section('content') ?>
+<!-- isi content disini -->
     <?php echo $this->endSection(); ?>
+
 
     </body>
 </html>
