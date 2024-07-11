@@ -7,3 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('tasks', 'TaskController::index');
+$routes->set404Override(function() {
+    echo view('errors/not_found');
+    });
